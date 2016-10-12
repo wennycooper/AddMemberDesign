@@ -19,6 +19,7 @@ https://www.websequencediagrams.com/?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVj
 
 * Topics 
  * startCapturing
+ * images
  * capturingProgress
  * setLabel
  * startTraining
