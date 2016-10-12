@@ -1,5 +1,7 @@
 # AddMemberDesign
 
+# Introduction
+
 # Architecture
 ![](https://docs.google.com/drawings/d/1hBYZEY3nbv3LDb4_GBEzU-ImwHIez7PBUzLJudvB6HE/pub?w=1125&h=731)
 
