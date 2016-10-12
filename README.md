@@ -24,6 +24,8 @@
 * Topics 
  * startCapturing
  * images
+  * topic name: /image
+  * type: sensor_msgs/image
  * capturingProgress
  * setLabel
  * startTraining
