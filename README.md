@@ -60,11 +60,19 @@
 ![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgYWRkTWVtYmVyIEZsb3cKClBhcnRpY2lwYW50IFJvYm90AAUNQ2xvdWQAFw1QaG9uZQoKACYFLT4AGwU6IGxvZ2luIHJlcS4KAC0FLT4ARgUADwpzcC4odG9rZW4pCm5vdGUgbGVmdCBvZgBrByAgIACBDQtldmVudAplbmQgbm90AGEKAEsHW29wdC1pbl0gZ2VuZXJhdGVBUEtRUkNvZGUKAEgTOgBXBVtRUjFdAEgKAIE1BwCBRQU6ABYHAIFSBQALCWluc3RhbGwgYXBwAAsPbGF1bmNoABQFAIF1EGFkZEFub255bW91c0ZyaWVuZACCDQUgKGRpc3BsYXlOYW1lLCByb2JvdElkKQCCIQgAgjsHAIFGCFVzZXIAgh0GcmlnaACCHwUAgn4GICAgIAA-CwCCLwV1c2VybgAFCHBhc3N3ACIGAF0HAII5CwCDCA8AgRYVc3AuICgASwgsAEkHKQCCcBAAgm4JY2Nlc3MAgnMHAIJeGzIAgmgRAIJuDDJdAIMcGWJsb2NrZQCBOQwAgxYOc2NhbgB4DQCCKA8Ag1gHAIIQGQBHEQCFMxkAg3MIAIU6EgAsDwCDVwVzACgUABEJc3AuKACDfgVMaXN0ADcKAIUFB3RyeUNvbm5lY3QAhwQHAIUQBgCGRgd3ZWJydGMgY2FsbACFUhl1bgCCJhIKCg&s=modern-blue)
 
 
-
 * Implementations
  * Tablet app
-  * store a label <-> displayName mapping
+ 
+    1. store a label <-> displayName mapping table
+    2. convert images to ROS messages (type: std_msgs/Image) and publishing 
+    3. call related APIs
+    
   
  * Cloud service
- add a new web service "addAnonymousFriend"
+ 
+    1. add a new web service "addAnonymousFriend"
+   
  * Phone app
+
+# References
+
