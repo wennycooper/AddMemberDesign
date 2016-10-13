@@ -62,4 +62,5 @@
   * store a label <-> displayName mapping
   
  * Cloud service
+ add a new web service "addAnonymousFriend"
  * Phone app
