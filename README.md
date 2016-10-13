@@ -1,5 +1,9 @@
 # AddMemberDesign
 
+# Meetings
+* [2016/10/12] Initial draft review
+* [2016/10/13] Final design review
+
 # Introduction
 
 # Architecture
