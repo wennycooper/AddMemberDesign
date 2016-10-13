@@ -7,7 +7,7 @@
 
 # People Learning and Recognition
 * Sequence Diagram
-![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAAHA1DT0IKCm5vdGUgbGVmdCBvZgAzCCAgICBwcmV2aWV3AAcFICggICAgKQABCykKZW5kIG5vdGUKCgBqBi0-AFwJOiBzdGFydENhcHR1cmluZwAOFWltYWdlcwABGQABGQAeFi4uLgoAgVwJLT4AgX0GOiBjAHsIUHJvZ3Jlc3MAASQAASQANBYuLi4AggUKAHwIc3RvcFNlbmRpbmdQaG90b3MAghwWZXRMYWJlbACCNRpUcmFpbmluZwCBVBR0ABUHAIFLHAABIwAjJQCBYAUAhCMTOgCEMgVyAIUNCiBldmVudCBjb21lcwCEDCMAhUUMAIM4XgCBGQtSZXN1bHRzCgoKCgoK&s=modern-blue)
+![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAAHA1DT0IKCm5vdGUgbGVmdCBvZgAzCCAgICBwcmV2aWV3AAcFICggICAgKQABCykKZW5kIG5vdGUKCgBqBi0-AFwJOiBzdGFydENhcHR1cmluZwAOFWltYWdlcwABGQABGQAeFi4uLgoAgVwJLT4AgX0GOiBjAHsIUHJvZ3Jlc3MAASQAASQANBYuLi4AggUKAHwIc3RvcFNlbmRpbmdQaG90b3MAghwWZXRMYWJlbACCNRpUcmFpbmluZwCBVBR0ABUHAIFLHAABIwAjJQCBYAUAhCMTOgCEMgVyAIUNCiBldmVudCBjb21lcwCEDCMAhUUMAINLSwCEAxQAgRoLAIN9HAABJgA5FQBXH1Jlc3VsdHMKCgoKCgo&s=modern-blue)
 
 * Topics 
  * startCapturing
@@ -38,6 +38,10 @@
  
         (topic name: /startRecognition, type: std_msgs/UInt8, value: 1(start) )
  
+ * recognitionProgress
+ 
+         (topic name: /recognitionProgress, type: std_msgs/UInt8, value: 0~100) )
+         
  * recognitionResult 
  
         (topic name: /recognitionResult, type: std_msgs/String, value: "display name" )
