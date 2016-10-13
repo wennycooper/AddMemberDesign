@@ -10,22 +10,37 @@
 ![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAAHA1DT0IKCm5vdGUgbGVmdCBvZgAzCCAgICBwcmV2aWV3AAcFICggICAgKQABCykKZW5kIG5vdGUKCgBqBi0-AFwJOiBzdGFydENhcHR1cmluZwAOFWltYWdlcwABGQABGQAeFi4uLgoAgVwJLT4AgX0GOiBjAHsIUHJvZ3Jlc3MAASQAASQANBYuLi4AggUKAHwIc3RvcFNlbmRpbmdQaG90b3MAghwWZXRMYWJlbACCNRpUcmFpbmluZwCBVBR0ABUHAIFLHAABIwAjJQCBYAUAhCMTOgCEMgVyAIUNCiBldmVudCBjb21lcwCEDCMAhUUMAIM4XgCBGQtSZXN1bHRzCgoKCgoK&s=modern-blue)
 
 * Topics 
- * startCapturing 
+ * startCapturing
+ 
         (topic name: /startCapturing, type: std_msgs/UInt8, value: 1(start) )
+
  * images 
-         (topic name: /images, type: sensor_msgs/image, Hz=??)
+
+        (topic name: /images, type: sensor_msgs/image, Hz=??)
+         
  * capturingProgress 
-         (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
+ 
+        (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
+
  * setLabel 
-         (topic name: /setLabel, type: std_msgs/String, value: "display name")
+ 
+        (topic name: /setLabel, type: std_msgs/String, value: "display name")
+ 
  * startTraining 
-         (topic name: /startTraining, type: std_msgs/UInt8, value: 1(start) )
+        
+        (topic name: /startTraining, type: std_msgs/UInt8, value: 1(start) )
+ 
  * trainingProgress 
-         (topic name: /trainingProgress, type: std_msgs/UInt8, value: 0~100) )
+         
+        (topic name: /trainingProgress, type: std_msgs/UInt8, value: 0~100) )
+ 
  * startRecognition 
-         (topic name: /startRecognition, type: std_msgs/UInt8, value: 1(start) )
+ 
+        (topic name: /startRecognition, type: std_msgs/UInt8, value: 1(start) )
+ 
  * recognitionResult 
-         (topic name: /recognitionResult, type: std_msgs/String, value: "display name" )
+ 
+        (topic name: /recognitionResult, type: std_msgs/String, value: "display name" )
 
 * Implementations
  * Tablet app
