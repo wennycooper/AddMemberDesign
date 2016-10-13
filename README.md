@@ -59,5 +59,7 @@
 
 * Implementations
  * Tablet app
+  * store a label <-> displayName mapping
+  
  * Cloud service
  * Phone app
