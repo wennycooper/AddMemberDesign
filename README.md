@@ -17,9 +17,8 @@
 
 * Services & Topics 
  * rostopic /cmdTrainning   // command to start training with label
- 
-    topic name: /cmdTraining, type: std_msgs/String
-    values: data = label
+>topic name: /cmdTraining, type: std_msgs/String
+>values: data = label
 
  * rostopic: /images  
 
