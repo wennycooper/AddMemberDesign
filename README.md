@@ -18,17 +18,17 @@
 * Services & Topics 
  * rostopic /cmdTrainning   // command to start training with label
  
-        topic name: /cmdTraining, type: std_msgs/String
-        values: data = label
+    topic name: /cmdTraining, type: std_msgs/String
+    values: data = label
 
  * rostopic: /images  
 
-        (topic name: /images, type: sensor_msgs/image, Hz=??)
+    (topic name: /images, type: sensor_msgs/image, Hz=??)
          
  * rostopic: /capturingProgress 
  
-        (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
-        (when the value = 100, the tablet app should stop publishing anymore images)
+    (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
+    (when the value = 100, the tablet app should stop publishing anymore images)
 
  * rostopic: /trainingProgress 
          
