@@ -21,27 +21,27 @@
 >values: data = label
 
  * rostopic: /images  
-
-    (topic name: /images, type: sensor_msgs/image, Hz=??)
+>topic name: /images, type: sensor_msgs/image, Hz=??
          
  * rostopic: /capturingProgress 
- 
-    (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
-    (when the value = 100, the tablet app should stop publishing anymore images)
+>topic name: /capturingProgress, type: std_msgs/UInt8, 
+>values: data = 0~100 
+
+Note: when the value.data = 100, the tablet app should stop publishing anymore images)
 
  * rostopic: /trainingProgress 
-         
-        (topic name: /trainingProgress, type: std_msgs/UInt8, value: 0~100) )
+>topic name: /trainingProgress, type: std_msgs/UInt8, 
+>values: data = 0~100 
  
  * rostopic: /cmdRecognition   // to start recognition
- 
-        (topic name: /cmdTraining, type: std_msgs/String) 
+>topic name: /cmdRecognition, type: std_msgs/Bool
+>values: data = True
          
  * rostopic: /recognitionResults   
- 
-        (topic name: /recognitionResults, type: std_msgs/String, value: label )
+>topic name: /recognitionResults, type: std_msgs/String
+>values: data = label 
 
-* Implementations
+* Implementations on
  * Tablet app
  * PPRecoApp on ROS
 
