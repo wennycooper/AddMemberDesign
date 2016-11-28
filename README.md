@@ -13,32 +13,34 @@
 # People Learning and Recognition
 * Sequence Diagram
 
-![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAKIwAeDG9wZW5GYWNlCgpub3RlIGxlZnQgb2YAOgc6CiAgICBsAHIIZXZlbnQgY29tZXMKZW5kIG5vdAAiFgAyBXByZXZpZXcAPgUgKCAgICApAAELKQA3CwCBKAYtPgCBGgk6IHJvc3NlcnZpY2UgY2FsbCAvdHJhaW4AgXsFIm5hbWU6ICdMYWJlbCciACcYdG9waWM6IC9pbWFnZXMKAIF2CS0-AIFVBwAZDGNhcHR1cmluZ1Byb2dyZXNzICgxMCUpAARYMgBEGC4uLgB2WgCBTAUAg2EFcmlnaACDYgUAhAsKICAgIHN0YXJ0IACCZQVpbmcgdGhlIG1vZGVsAINKI3N0b3Agc2VuZGluZyAAgmwHAIQZCgoAgmAfAGsIAIJvDwAFMACCUgUAOjAzAFMXLi4uAIEDMwCCWgoAhjYUcgCHJwoAhjYXAIVnJHdob2FtaSAicmVxdWVzdDogJ3lvJyIAhWEmAIYHJQCFARgAhi4WAIcgCHJlc3BvbmQgWwCBWwtSZXN1bHRzXQoKCgoKCg&s=modern-blue)
+![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAKIwAeDG9wZW5GYWNlCgpub3RlIGxlZnQgb2YAOgc6CiAgICBsAHIIZXZlbnQgY29tZXMKZW5kIG5vdAAiFgAyBXByZXZpZXcAPgUgKCAgICApAAELKQA3CwCBKAYtPgCBGgk6IHJvc3RvcGljOiAvY21kVHJhaW4AgXgFKHdpdGggbGFiZWwpABkgaW1hZ2VzCgCBcAktPgCBTwcAUQ1hcHR1cmluZ1Byb2dyZXNzICgxMCUAA1kyAEQYLi4uAHZaAIFMBQCDWwVyaWdoAINcBQCEBQogICAgc3RhcnQgdHJhaQCEXgV0aGUgbW9kZWwAg0Qjc3RvcCBzZW5kaW5nIACCbAcAhBMKCgCCYB8AawgAgm8PAAUwAIJSBQA6MDMAUxcuLi4AgQMzAIJaCgCGMBRyAIchCgCGMBcAhWQhAIdiDACFVCUAhXklAIRzGACGGxsgLwCBQwtSZXN1bHRzCgoKCgoKCg&s=modern-blue)
 
 * Services & Topics 
- * rosservice call /trainning
+ * rostopic /cmdTrainning   // command to start training with label
  
-        (name: 'Label' )
+        topic name: /cmdTraining, type: std_msgs/String
+        values: data = label
 
- * rostopic: images  
+ * rostopic: /images  
 
         (topic name: /images, type: sensor_msgs/image, Hz=??)
          
- * rostopic: capturingProgress 
+ * rostopic: /capturingProgress 
  
         (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
         (when the value = 100, the tablet app should stop publishing anymore images)
 
- * rostopic: trainingProgress 
+ * rostopic: /trainingProgress 
          
         (topic name: /trainingProgress, type: std_msgs/UInt8, value: 0~100) )
  
- * rosservice call /whoami "request: 'yo'"   // to start recognition
+ * rostopic: /cmdRecognition   // to start recognition
  
+        (topic name: /cmdTraining, type: std_msgs/String) 
          
- * rosservice respond recognitionResult 
+ * rostopic: /recognitionResults   
  
-        ??(topic name: /recognitionResult, type: std_msgs/String, value: "display name" )
+        (topic name: /recognitionResults, type: std_msgs/String, value: label )
 
 * Implementations
  * Tablet app
