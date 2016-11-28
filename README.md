@@ -17,7 +17,7 @@
 
 * Topic names and message types 
  * rostopic /cmdTrainning   // command to start training with label
->topic name: /cmdTraining, type: std_msgs/String
+>topic name: /cmdTraining, type: std_msgs/String  
 >values: data = label
 
  * rostopic: /croppedImages  
