@@ -14,42 +14,30 @@
 
 ![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAKIwAeDG9wZW5GYWNlCgpub3RlIGxlZnQgb2YAOgc6CiAgICBsAHIIZXZlbnQgY29tZXMKZW5kIG5vdAAiFgAyBXByZXZpZXcAPgUgKCAgICApAAELKQA3CwCBKAYtPgCBGgk6IHJvc3NlcnZpY2UgY2FsbCAvdHJhaW4AgXsFIm5hbWU6ICdMYWJlbCciACcYdG9waWM6IC9pbWFnZXMKAIF2CS0-AIFVBwAZDGNhcHR1cmluZ1Byb2dyZXNzICgxMCUpAARYMgBEGC4uLgB2WgCBTAUAg2EFcmlnaACDYgUAhAsKICAgIHN0YXJ0IACCZQVpbmcgdGhlIG1vZGVsAINKI3N0b3Agc2VuZGluZyAAgmwHAIQZCgoAgmAfAGsIAIJvDwAFMACCUgUAOjAzAFMXLi4uAIEDMwCCWgoAhjYUcgCHJwoAhjYXAIVnJHdob2FtaSAicmVxdWVzdDogJ3lvJyIAhWEmAIYHJQCFARgAhi4WAIcgCHJlc3BvbmQgWwCBWwtSZXN1bHRzXQoKCgoKCg&s=modern-blue)
 
-* Topics 
- * startCapturing
+* Services & Topics 
+ * rosservice call /trainning
  
-        (topic name: /startCapturing, type: std_msgs/UInt8, value: 1(start) )
+        (name: 'Label' )
 
- * images 
+ * rostopic: images  
 
         (topic name: /images, type: sensor_msgs/image, Hz=??)
          
- * capturingProgress 
+ * rostopic: capturingProgress 
  
         (topic name: /capturingProgress, type: std_msgs/UInt8, value: 0~100 )
+        (when the value = 100, the tablet app should stop publishing anymore images)
 
- * setLabel 
- 
-        (topic name: /setLabel, type: std_msgs/String, value: "display name")
- 
- * startTraining 
-        
-        (topic name: /startTraining, type: std_msgs/UInt8, value: 1(start) )
- 
- * trainingProgress 
+ * rostopic: trainingProgress 
          
         (topic name: /trainingProgress, type: std_msgs/UInt8, value: 0~100) )
  
- * startRecognition 
+ * rosservice call /whoami "request: 'yo'"   // to start recognition
  
-        (topic name: /startRecognition, type: std_msgs/UInt8, value: 1(start) )
- 
- * recognitionProgress
- 
-         (topic name: /recognitionProgress, type: std_msgs/UInt8, value: 0~100) )
          
- * recognitionResult 
+ * rosservice respond recognitionResult 
  
-        (topic name: /recognitionResult, type: std_msgs/String, value: "display name" )
+        ??(topic name: /recognitionResult, type: std_msgs/String, value: "display name" )
 
 * Implementations
  * Tablet app
