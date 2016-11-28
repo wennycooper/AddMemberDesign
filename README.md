@@ -24,19 +24,19 @@
 >topic name: /croppedImages, type: sensor_msgs/image
          
  * rostopic: /capturingProgress 
->topic name: /capturingProgress, type: std_msgs/UInt8, 
+>topic name: /capturingProgress, type: std_msgs/UInt8,   
 >values: data = 0~100 (Note: when the value.data = 100, the tablet app should stop publishing images)
 
  * rostopic: /trainingProgress 
->topic name: /trainingProgress, type: std_msgs/UInt8, 
+>topic name: /trainingProgress, type: std_msgs/UInt8,  
 >values: data = 0~100 
  
  * rostopic: /cmdRecognition   // to start recognition
->topic name: /cmdRecognition, type: std_msgs/Bool
+>topic name: /cmdRecognition, type: std_msgs/Bool  
 >values: data = True
          
  * rostopic: /recognitionResults   
->topic name: /recognitionResults, type: std_msgs/String
+>topic name: /recognitionResults, type: std_msgs/String  
 >values: data = label 
 
 * Implementations on
