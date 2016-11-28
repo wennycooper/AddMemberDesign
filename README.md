@@ -25,7 +25,8 @@
          
  * rostopic: /capturingProgress 
 >topic name: /capturingProgress, type: std_msgs/UInt8,   
->values: data = 0~100 (Note: when the value.data = 100, the tablet app should stop publishing images)
+>values: data = 0~100  
+>(Note: when the values.data = 100, the tablet app should stop publishing images)
 
  * rostopic: /trainingProgress 
 >topic name: /trainingProgress, type: std_msgs/UInt8,  
