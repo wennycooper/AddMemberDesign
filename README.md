@@ -3,6 +3,7 @@
 # Meetings
 * [2016/10/12] Initial draft review
 * [2016/10/13] Final design review
+* [2016/11/28] Design revised by Will and KKuei
 
 # Introduction
 
