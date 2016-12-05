@@ -21,7 +21,7 @@
 >values: data = label
 
  * rostopic: /croppedImages  
->topic name: /croppedImages, type: sensor_msgs/image
+>topic name: /croppedImages, type: sensor_msgs/CompressedImage
          
  * rostopic: /capturingProgress 
 >topic name: /capturingProgress, type: std_msgs/UInt8,   
@@ -54,7 +54,7 @@
  * Tablet app
  
     1. store a label <-> displayName mapping table
-    2. convert images to ROS messages (type: std_msgs/Image) and publishing 
+    2. convert images to ROS messages (type: sensor_msgs/CompressedImage) and publishing 
     3. call related APIs
     
   
