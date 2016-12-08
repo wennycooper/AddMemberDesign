@@ -16,7 +16,7 @@
 ![](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=VGl0bGUgcGVvcGxlTGVhcm5pbmcgYW5kAAwHUmVjb2duaXRpb24KCgpQYXJ0aWNpcGFudCBUYWJsZXQABg1QUFJlY29BcHAKIwAeDG9wZW5GYWNlCgpub3RlIGxlZnQgb2YAOgc6CiAgICBsAHIIZXZlbnQgY29tZXMKZW5kIG5vdAAiFgAyBXByZXZpZXcAPgUgKCAgICApAAELKQA3CwCBKAYtPgCBGgk6IHJvc3RvcGljOiAvY21kVHJhaW4AgXgFKHdpdGggbGFiZWwpABghcm9wcGVkSW1hZ2VzCgCBdwktPgCBVgcAWA1hcHR1cmluZ1Byb2dyZXNzICgxMCUAA2AyAEsYLi4uAH1hAIFaBQCDcAVyaWdoAINxBQCEGgogICAgc3RhcnQgdHJhaQCEcwV0aGUgbW9kZWwAg1kjc3RvcCBzZW5kaW5nIGkAgnsGAIQoCgoAgm4fAGsIAIJ9DwAFMACCWQUAOjAzAFMXLi4uAIEDMwCCWgoAhkUUcgCHNgoAhkUXAIV5IQCHdwwAhWIsAIYOLACFCBgAhjQeAIFSC1Jlc3VsdHMKCgoKCgoK&s=modern-blue)
 
 * Topic names and message types 
- * rostopic /cmdTrainning   // command to start training with label
+ * rostopic /cmdTraining   // command to start training with label
 >topic name: /cmdTraining, type: std_msgs/String  
 >values: data = label
 
